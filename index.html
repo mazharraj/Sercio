@@ -9,95 +9,206 @@
   <body class="inter-medium">
     <section
       id="header"
-      class="sticky top-0 max-w-[1440px] lg:px-[66px] py-10 bg-bg"
+      class="sticky top-0 z-50 max-w-[1440px] lg:px-[66px] py-6 bg-bg shadow-md"
     >
-      <nav class="flex justify-between items-center">
-        <img src="assets/logo/Sercio.png" alt="logo" />
-        <div class="menu">
-          <ul class="text-xl flex items-center gap-2">
-            <li><a href="#" class="px-6">What we do</a></li>
-            <li><a href="#" class="px-6">Our Impact</a></li>
-            <li><a href="#" class="px-6">Our Thoughts</a></li>
-            <button class="bg-secondary py-4 px-9 text-white">
-              Contact Us
-            </button>
+      <nav class="flex justify-between items-center px-4 lg:px-0">
+        <!-- Logo -->
+        <img src="assets/logo/Sercio.png" alt="logo" class="w-32" />
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="lg:hidden text-2xl focus:outline-none">
+          &#9776;
+        </button>
+
+        <!-- Navigation Links -->
+        <div
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row items-center gap-4 absolute lg:static top-16 left-0 w-full lg:w-auto bg-bg lg:bg-transparent shadow-lg lg:shadow-none p-5 lg:p-0"
+        >
+          <ul
+            class="text-lg flex flex-col lg:flex-row items-center gap-4 w-full lg:w-auto"
+          >
+            <li><a href="#" class="px-6 block lg:inline">What we do</a></li>
+            <li><a href="#" class="px-6 block lg:inline">Our Impact</a></li>
+            <li><a href="#" class="px-6 block lg:inline">Our Thoughts</a></li>
+            <li>
+              <button
+                class="bg-secondary py-3 px-6 text-white w-full lg:w-auto"
+              >
+                Contact Us
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
     </section>
-    <section id="hero" class="bg-bg max-w-[1440px] lg:px-[66px]">
-      <div class="flex justify-between items-end">
-        <article>
+    <section id="hero" class="bg-bg max-w-[1440px] lg:px-[66px] px-4 py-10">
+      <div
+        class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10"
+      >
+        <article class="text-center lg:text-left w-full lg:w-1/2">
           <div class="relative">
-            <h1 class="text-[64px] inter-bold">
-              Award - winning Customar <br />
-              service Agency
+            <h1 class="text-[40px] lg:text-[64px] inter-bold leading-tight">
+              Award-winning Customer <br />
+              Service Agency
             </h1>
-            <div class="absolute right-14 top-1/2 -translate-y-1/2">
+            <div
+              class="absolute right-6 top-1/2 -translate-y-1/2 hidden lg:block"
+            >
               <div class="flex items-center">
                 <img
                   src="assets/images/Group 1.png"
                   alt="man"
-                  class="w-16 y-16"
+                  class="w-12 lg:w-16"
                 />
                 <img
                   src="assets/images/Group 2.png"
                   alt="man"
-                  class="ml-[-15px] w-16 y-16"
+                  class="ml-[-10px] lg:ml-[-15px] w-12 lg:w-16"
                 />
                 <img
                   src="assets/images/Group 3.png"
                   alt="man"
-                  class="ml-[-15px] w-16 y-16"
+                  class="ml-[-10px] lg:ml-[-15px] w-12 lg:w-16"
                 />
                 <img
                   src="assets/images/Group 4.png"
                   alt="man"
-                  class="ml-[-15px] w-16 y-16"
+                  class="ml-[-10px] lg:ml-[-15px] w-12 lg:w-16"
                 />
               </div>
             </div>
           </div>
-          <p class="text-[#525050] py-9">
-            Bost your Business network with our to best online Collabarators
+          <p class="text-[#525050] py-6 lg:py-9 text-sm lg:text-base">
+            Boost your business network with our best online collaborators.
           </p>
-
-          <div class="flex-items-center text-base">
+          <div class="flex flex-col sm:flex-row items-center gap-4 text-base">
             <input
               type="text"
               placeholder="Type Your Email"
-              class="bg-white shadow-lg pl-3 pr-[125px] py-2 w-[424px] rounded-md"
+              class="bg-white shadow-lg pl-3 pr-[100px] py-2 w-full sm:w-[300px] lg:w-[424px] rounded-md"
             />
             <button
-              class="bg-[#FFCC45] px-2 py-[6px] rounded-md ml-[-119px] shadow-lg tracking-wider"
+              class="bg-[#FFCC45] px-4 py-2 lg:px-2 lg:py-[6px] rounded-md shadow-lg tracking-wider w-full sm:w-auto"
             >
               Contact Me
             </button>
           </div>
-          <div class="flex items-center gap-5 pt-9 pb-20">
+          <div
+            class="flex flex-col sm:flex-row items-center gap-4 pt-6 lg:pt-9 pb-10 lg:pb-20"
+          >
             <p class="text-[#525050]">12K Reviews</p>
             <div class="flex items-center gap-1">
-              <img src="assets/Icons/Star 1.png" alt="start" />
-              <img src="assets/Icons/Star 1.png" alt="start" />
-              <img src="assets/Icons/Star 1.png" alt="start" />
-              <img src="assets/Icons/Star 1.png" alt="start" />
-              <img src="assets/Icons/Star 1.png" alt="start" />
+              <img src="assets/Icons/Star 1.png" alt="star" class="w-5" />
+              <img src="assets/Icons/Star 1.png" alt="star" class="w-5" />
+              <img src="assets/Icons/Star 1.png" alt="star" class="w-5" />
+              <img src="assets/Icons/Star 1.png" alt="star" class="w-5" />
+              <img src="assets/Icons/Star 1.png" alt="star" class="w-5" />
             </div>
           </div>
         </article>
-        <div class="relative">
-          <img src="assets/images/image 66.png" alt="hero image" />
+        <div class="relative w-full lg:w-1/2 flex justify-center">
+          <img
+            src="assets/images/image 66.png"
+            alt="hero image"
+            class="w-full max-w-[500px]"
+          />
           <div
-            class="absolute top-20 bg-white py-3 px-2 rounded-lg shadow-xl flex items-center gap-4"
+            class="absolute left-5 top-10 bg-white py-2 px-3 rounded-lg shadow-xl flex items-center gap-2 text-sm"
           >
-            <img src="assets/Icons/Group 24.png" alt="icon" />
+            <img src="assets/Icons/Group 24.png" alt="icon" class="w-6" />
             <div>
               <p>Website Design</p>
               <p class="text-[#525050]">12 Jan 2023</p>
             </div>
           </div>
+          <div class="absolute right-4 top-1 shadow-xl">
+            <img src="assets/Icons/Group 25.png" alt="" />
+          </div>
+          <div
+            class="absolute right-0 top-1/2 bg-white rounded-xl shadow px-2 py-4"
+          >
+            <h3 class="inter-bold py-2">Spend Overview</h3>
+            <img src="assets/Icons/Group 26.png" alt="" />
+          </div>
+          <div
+            class="absolute bottom-4 left-0 bg-white rounded-xl shadow px-2 py-4"
+          >
+            <h3 class="inter-bold py-2">+$2,546.00</h3>
+            <div class="bg-[#F5F5F5] w-[90px] h-[10px] mb-4"></div>
+            <div class="bg-[#F5F5F5] w-[166px] h-[2px] mb-3"></div>
+            <div class="flex items-center gap-2">
+              <img src="assets/images/Group 4.png" alt="" class="w-10" />
+              <div>
+                <h3 class="inter-bold tracking-widest text-sm lg:text-base">
+                  Sofie Kolio
+                </h3>
+                <p class="text-[#525050] text-xs lg:text-[12px]">
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section id="second" class="max-w-[1440px] lg:px-[66px] py-10 bg-secondary">
+      <div class="flex items-center w-full gap-6">
+        <div class="w-[40%]">
+          <h2 class="text-white inter-bold text-[48px] pb-14">
+            Build your best product with us!
+          </h2>
+          <button
+            class="bg-[#FFCC45] hover:bg-[#f3ff45] cursor-pointer py-4 px-10 rounded-md shadow-lg tracking-wider"
+          >
+            Let's Talk
+          </button>
+        </div>
+        <div class="flex justify-between py-24 gap-4 w-[60%]">
+          <div
+            class="relative border border-white text-white px-6 pb-5 pt-14 bg-[#0E5E67] rounded-lg"
+          >
+            <img
+              src="assets/Icons/Group 27.png"
+              alt="icon"
+              class="absolute top-[-32px]"
+            />
+            <p class="text-xl inter-medium pb-3">Customer Engagement</p>
+            <p class="text-base">
+              easy to distinguish in a free hour. when our power of choice is
+            </p>
+          </div>
+          <div
+            class="relative border border-white text-black mt-[-30px] px-6 pb-5 pt-14 bg-white rounded-lg"
+          >
+            <img
+              src="assets/Icons/Group 28.png"
+              alt="icon"
+              class="absolute top-[-36px]"
+            />
+            <p class="text-xl inter-medium pb-3">Customer Engagement</p>
+            <p class="text-base text-[#898989]">
+              easy to distinguish in a free hour. when our power of choice is
+            </p>
+          </div>
+          <div
+            class="relative border border-white text-white px-6 pb-5 pt-14 bg-[#0E5E67] rounded-lg"
+          >
+            <img
+              src="assets/Icons/Group 29.png"
+              alt="icon"
+              class="absolute top-[-32px]"
+            />
+            <p class="text-xl inter-medium pb-3">Customer Engagement</p>
+            <p class="text-base">
+              easy to distinguish in a free hour. when our power of choice is
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
